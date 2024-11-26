@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Adjust N, P, K, pH for Your Crop</h1>
+    <form onsubmit="getPredictions(); return false;">
+        Crop: <input type="text" id="crop" /><br />
+        N: <input type="text" id="N" /><br />
+        P: <input type="text" id="P" /><br />
+        K: <input type="text" id="K" /><br />
+        pH: <input type="text" id="ph" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <p>Predicted N: <span id="predicted_N"></span></p>
+    <p>Predicted P: <span id="predicted_P"></span></p>
+    <p>Predicted K: <span id="predicted_K"></span></p>
+    <p>Predicted pH: <span id="predicted_pH"></span></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
